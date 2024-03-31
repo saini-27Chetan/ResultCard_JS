@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main-card">
+        <header class="heading">Your Result</header>
+        <div class="score-display">
+          <div class="marks-scored">76</div>
+          <div class="total-marks">of 100</div>
+        </div>
+        <div class="grade">Great</div>
+        <div class="description">
+          You scored higher than <span class="percentile">65</span>% of the people who have taken these tests.
+        </div>
+      </div>
+      <div class="card-summary">
+        <header class="heading">Summary</header>
+        <div class="stats">
+          <div class="performance red">
+            <img src="./Images/icon-reaction.svg" alt="Reaction">
+            <div class="performance-head">Reaction</div>
+            <div class="performance-score">
+              <span class="marks" id="reactionScore">80</span><span class="out-of">/</span
+              ><span class="hundred">100</span>
+            </div>
+          </div>
+          <div class="performance yellow">
+            <img src="./Images/icon-memory.svg" alt="Memory">
+            <span class="performance-head">Memory</span>
+            <span class="performance-score"
+              ><span class="marks" id="memoryScore">92</span><span class="out-of">/</span
+              ><span class="hundred">100</span></span
+            >
+          </div>
+          <div class="performance green">
+            <img src="./Images/icon-verbal.svg" alt="Verbal">
+            <span class="performance-head">Verbal</span>
+            <span class="performance-score"
+              ><span class="marks" id="verbalScore">61</span><span class="out-of">/</span
+              ><span class="hundred">100</span></span
+            >
+          </div>
+          <div class="performance blue">
+            <img src="./Images/icon-visual.svg" alt="Visual">
+            <span class="performance-head">Visual</span>
+            <span class="performance-score"
+              ><span class="marks" id="visualScore">72</span><span class="out-of">/</span
+              ><span class="hundred">100</span></span
+            >
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
