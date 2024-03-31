@@ -8,8 +8,6 @@ let verbalVal = document.getElementById('verbalScore');
 let visualVal = document.getElementById('visualScore');
 
 students.forEach(element => {
-    console.log(element);
-
     if(studentName === element.name){
         marksScoredVal.innerText=element.marksScored;
         gradeVal.innerText=element.grade;
@@ -20,3 +18,5 @@ students.forEach(element => {
         visualVal.innerText=element.visual;
     }
 });
+
+// If student name is not present in the data.js then the result will be 0
